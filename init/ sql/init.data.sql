@@ -3,7 +3,7 @@ SQLyog 企业版 - MySQL GUI v7.14
 MySQL - 5.6.16-log : Database - i_wenyiba_com
 *********************************************************************
 */
-
+/*testetstetse*/
 /*所有的表数据插入*/
 
 /*Data for the table `u_permission` */
