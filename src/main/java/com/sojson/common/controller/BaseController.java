@@ -47,7 +47,6 @@ public class BaseController {
 	public static String URL404 =  "/404.html";
 	private final static String PARAM_PAGE_NO = "pageNo";
 	protected String pageSizeName = "pageSize";
-	
 	/**
 	 * 往Request里带值
 	 * @param request

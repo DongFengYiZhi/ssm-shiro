@@ -10,17 +10,7 @@ import java.util.Map;
 public class Test2 {
     @Test
     public void test(){
-        List<Object[]> objects=new ArrayList<>();
-        objects.add(new Object[]{1,'a'});
-        objects.add(new Object[]{2,'b'});
-        objects.add(new Object[]{1,'c'});
-        objects.add(new Object[]{2,'d'});
-        objects.add(new Object[]{1,'e'});
-        objects.add(new Object[]{2,'f'});
-        Map<Integer,String> map=transform(objects);
-        for (Map.Entry<Integer, String > entry : map.entrySet()) {
-            System.out.println( entry.getValue());
-        }
+
     }
     public Map<Integer,String> transform(List<Object[]> objects){
         Map<Integer,String> map=new HashMap<>();
