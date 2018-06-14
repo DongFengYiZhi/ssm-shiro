@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="agentsmanagersystem"/>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="invitationmanage"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="qq"/>
+    <schema id="7" parent="1" name="quanxianxitong"/>
+    <schema id="8" parent="1" name="rzm"/>
+    <schema id="9" parent="1" name="schoolmanager"/>
+    <schema id="10" parent="1" name="stranger"/>
+    <schema id="11" parent="1" name="supermarkert"/>
+    <schema id="12" parent="1" name="taobao"/>
+    <schema id="13" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="14" parent="1" name="tianmao"/>
+    <schema id="15" parent="1" name="ydl_msg"/>
+    <table id="16" parent="13" name="u_permission"/>
+    <table id="17" parent="13" name="u_role"/>
+    <table id="18" parent="13" name="u_role_permission"/>
+    <table id="19" parent="13" name="u_user"/>
+    <table id="20" parent="13" name="u_user_role"/>
+    <column id="21" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="16" name="url">
+      <Position>2</Position>
+      <Comment>url地址</Comment>
+      <DataType>VARCHAR(256)|12</DataType>
+    </column>
+    <column id="23" parent="16" name="name">
+      <Position>3</Position>
+      <Comment>url描述</Comment>
+      <DataType>VARCHAR(64)|12</DataType>
+    </column>
+    <key id="24" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="26" parent="17" name="name">
+      <Position>2</Position>
+      <Comment>角色名称</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="27" parent="17" name="type">
+      <Position>3</Position>
+      <Comment>角色类型</Comment>
+      <DataType>VARCHAR(10)|12</DataType>
+    </column>
+    <key id="28" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="18" name="rid">
+      <Position>1</Position>
+      <Comment>角色ID</Comment>
+      <DataType>BIGINT(19)|-5</DataType>
+    </column>
+    <column id="30" parent="18" name="pid">
+      <Position>2</Position>
+      <Comment>权限ID</Comment>
+      <DataType>BIGINT(19)|-5</DataType>
+    </column>
+    <column id="31" parent="19" name="id">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="19" name="nickname">
+      <Position>2</Position>
+      <Comment>用户昵称</Comment>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="33" parent="19" name="email">
+      <Position>3</Position>
+      <Comment>邮箱|登录帐号</Comment>
+      <DataType>VARCHAR(128)|12</DataType>
+    </column>
+    <column id="34" parent="19" name="pswd">
+      <Position>4</Position>
+      <Comment>密码</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+    </column>
+    <column id="35" parent="19" name="create_time">
+      <Position>5</Position>
+      <Comment>创建时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <column id="36" parent="19" name="last_login_time">
+      <Position>6</Position>
+      <Comment>最后登录时间</Comment>
+      <DataType>DATETIME(19)|93</DataType>
+    </column>
+    <column id="37" parent="19" name="status">
+      <Position>7</Position>
+      <Comment>1:有效，0:禁止登录</Comment>
+      <DataType>BIGINT(19)|-5</DataType>
+      <DefaultExpression>1</DefaultExpression>
+    </column>
+    <key id="38" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="39" parent="20" name="uid">
+      <Position>1</Position>
+      <Comment>用户ID</Comment>
+      <DataType>BIGINT(19)|-5</DataType>
+    </column>
+    <column id="40" parent="20" name="rid">
+      <Position>2</Position>
+      <Comment>角色ID</Comment>
+      <DataType>BIGINT(19)|-5</DataType>
+    </column>
+  </database-model>
+</dataSource>
